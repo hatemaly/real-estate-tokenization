@@ -182,7 +182,7 @@ export default function Landing() {
                 <circle cx="20" cy="16" r="4" fill="#f0faf3"/>
               </svg>
               <span className="text-lg font-bold tracking-tight text-slate-900 leading-tight">
-                New Uptown<br/>October
+                Uptown<br/>Green
               </span>
             </Link>
 
@@ -496,7 +496,7 @@ export default function Landing() {
               Built on Regulated Infrastructure
             </h2>
             <p className="mt-4 text-lg text-slate-500">
-              Every layer of the New Uptown October platform is powered by licensed, institutional-grade partners.
+              Every layer of the Uptown Green platform is powered by licensed, institutional-grade partners.
             </p>
           </div>
 
@@ -617,7 +617,7 @@ export default function Landing() {
                   <circle cx="20" cy="16" r="4" fill="#f0faf3"/>
                 </svg>
                 <span className="text-base font-bold tracking-tight text-slate-900 leading-tight">
-                  New Uptown October
+                  Uptown Green
                 </span>
               </div>
               <p className="text-sm text-slate-500 max-w-xs">
@@ -647,7 +647,7 @@ export default function Landing() {
 
           <div className="mt-10 pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-xs text-slate-400">
-              &copy; {new Date().getFullYear()} New Uptown October. All rights reserved.
+              &copy; {new Date().getFullYear()} Uptown Green. All rights reserved.
             </p>
             <div className="flex items-center gap-1.5 text-xs text-slate-400">
               <Shield className="w-3.5 h-3.5 text-primary-500" />
