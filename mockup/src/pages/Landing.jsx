@@ -7,7 +7,6 @@ import {
   ArrowRight,
   ChevronRight,
   MapPin,
-  Landmark,
   FileCheck,
   Wallet,
   PieChart,
@@ -24,10 +23,10 @@ import { useState } from 'react';
 /* ------------------------------------------------------------------ */
 
 const stats = [
-  { label: 'Assets Under Management', value: 'AED 125M+' },
-  { label: 'Verified Investors', value: '1,200+' },
-  { label: 'Properties Listed', value: '18' },
-  { label: 'Average Annual Yield', value: '9.2%' },
+  { label: 'Assets Under Management', value: 'AED 95M+' },
+  { label: 'Verified Investors', value: '850+' },
+  { label: 'Properties Listed', value: '12' },
+  { label: 'Average Annual Yield', value: '11.4%' },
 ];
 
 const steps = [
@@ -39,7 +38,7 @@ const steps = [
   {
     icon: Building2,
     title: 'Browse Properties',
-    description: 'Explore curated Dubai real estate listings with transparent financials and yield projections.',
+    description: 'Explore curated Egyptian real estate listings with transparent financials and yield projections.',
   },
   {
     icon: Coins,
@@ -55,31 +54,31 @@ const steps = [
 
 const featuredProperties = [
   {
-    name: 'Marina Gate Tower III',
-    location: 'Dubai Marina',
+    name: 'Green Avenue Residences',
+    location: '6th of October City, Giza',
     type: 'residential',
-    yield: '8.7%',
+    yield: '10.5%',
     pricePerToken: 'AED 500',
     sold: 72,
-    gradient: 'from-blue-400 to-indigo-600',
+    gradient: 'from-green-600 to-emerald-800',
   },
   {
-    name: 'Business Bay Office Hub',
-    location: 'Business Bay',
+    name: 'Capital Business District',
+    location: 'New Administrative Capital, Cairo',
     type: 'commercial',
-    yield: '10.1%',
+    yield: '12.3%',
     pricePerToken: 'AED 1,000',
     sold: 45,
-    gradient: 'from-emerald-400 to-teal-600',
+    gradient: 'from-emerald-500 to-teal-700',
   },
   {
-    name: 'JVC Garden Residences',
-    location: 'Jumeirah Village Circle',
+    name: 'Nile View Garden Villas',
+    location: 'Sheikh Zayed City, Giza',
     type: 'residential',
-    yield: '9.4%',
+    yield: '11.1%',
     pricePerToken: 'AED 250',
     sold: 88,
-    gradient: 'from-purple-400 to-pink-600',
+    gradient: 'from-teal-500 to-green-700',
   },
 ];
 
@@ -100,8 +99,8 @@ const partners = [
     description: 'Automated identity verification and anti-money laundering checks for regulatory compliance.',
   },
   {
-    name: 'Zand Bank',
-    role: 'CBUAE-licensed digital bank',
+    name: 'Mashreq Bank',
+    role: 'CBUAE-licensed banking partner',
     description: 'Regulated banking partner for escrow accounts, settlement, and fund custody.',
   },
 ];
@@ -176,12 +175,14 @@ export default function Landing() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-primary-700 flex items-center justify-center">
-                <Landmark className="w-4.5 h-4.5 text-white" />
-              </div>
-              <span className="text-xl font-bold tracking-tight text-slate-900">
-                DAREK
+            <Link to="/" className="flex items-center gap-2.5">
+              <svg viewBox="0 0 40 48" className="w-8 h-10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 2c-4 0-7 2-9 5-2 3-3 7-3 11 0 6 2 11 5 15 3 4 6 7 7 9v4c0 1 1 2 2 2h0c1 0 2-1 2-2v-4c1-2 4-5 7-9 3-4 5-9 5-15 0-4-1-8-3-11-2-3-5-5-9-5h-4z" fill="#1b6235"/>
+                <path d="M24 6c3 1 5 3 6 6 1 2 2 5 2 8 0 5-2 9-4 13-2 3-4 5-5 7v-8c2-2 4-5 5-8 1-3 2-6 2-9 0-3-1-5-2-7-1-1-2-2-4-2z" fill="#227a43"/>
+                <circle cx="20" cy="16" r="4" fill="#f0faf3"/>
+              </svg>
+              <span className="text-lg font-bold tracking-tight text-slate-900 leading-tight">
+                New Uptown<br/>October
               </span>
             </Link>
 
@@ -283,13 +284,13 @@ export default function Landing() {
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight">
-                Own Dubai Real Estate,
+                Own Egyptian Real Estate,
                 <br />
                 <span className="text-primary-200">One Token at a Time</span>
               </h1>
 
               <p className="mt-6 text-lg sm:text-xl text-white/70 leading-relaxed max-w-2xl">
-                Invest in premium Dubai properties through fractional ownership.
+                Invest in premium Egyptian properties from the UAE through fractional ownership.
                 Fully regulated, AED fiat-only, with automated rental distributions
                 — starting from just AED 250 per token.
               </p>
@@ -349,7 +350,7 @@ export default function Landing() {
               How It Works
             </h2>
             <p className="mt-4 text-lg text-slate-500">
-              From signup to earning rent — four straightforward steps to invest in Dubai real estate.
+              From signup to earning rent — four straightforward steps to invest in Egyptian real estate.
             </p>
           </div>
 
@@ -395,7 +396,7 @@ export default function Landing() {
                 Featured Properties
               </h2>
               <p className="mt-3 text-lg text-slate-500">
-                Hand-picked Dubai properties with strong yields and full transparency.
+                Hand-picked Egyptian properties with strong yields and full transparency.
               </p>
             </div>
             <Link
@@ -495,7 +496,7 @@ export default function Landing() {
               Built on Regulated Infrastructure
             </h2>
             <p className="mt-4 text-lg text-slate-500">
-              Every layer of the DAREK platform is powered by licensed, institutional-grade partners.
+              Every layer of the New Uptown October platform is powered by licensed, institutional-grade partners.
             </p>
           </div>
 
@@ -584,10 +585,10 @@ export default function Landing() {
 
             <div className="relative px-8 py-16 sm:px-16 sm:py-20 text-center">
               <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
-                Ready to Invest in Dubai Real Estate?
+                Ready to Invest in Egyptian Real Estate?
               </h2>
               <p className="mt-4 text-lg text-white/70 max-w-xl mx-auto">
-                Join 1,200+ verified investors earning passive rental income from premium Dubai properties.
+                Join 850+ verified investors earning passive rental income from premium Egyptian properties.
               </p>
               <Link
                 to="/kyc"
@@ -609,16 +610,18 @@ export default function Landing() {
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
             {/* Brand */}
             <div>
-              <div className="flex items-center gap-2 mb-3">
-                <div className="w-7 h-7 rounded-lg bg-primary-700 flex items-center justify-center">
-                  <Landmark className="w-3.5 h-3.5 text-white" />
-                </div>
-                <span className="text-lg font-bold tracking-tight text-slate-900">
-                  DAREK
+              <div className="flex items-center gap-2.5 mb-3">
+                <svg viewBox="0 0 40 48" className="w-7 h-8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 2c-4 0-7 2-9 5-2 3-3 7-3 11 0 6 2 11 5 15 3 4 6 7 7 9v4c0 1 1 2 2 2h0c1 0 2-1 2-2v-4c1-2 4-5 7-9 3-4 5-9 5-15 0-4-1-8-3-11-2-3-5-5-9-5h-4z" fill="#1b6235"/>
+                  <path d="M24 6c3 1 5 3 6 6 1 2 2 5 2 8 0 5-2 9-4 13-2 3-4 5-5 7v-8c2-2 4-5 5-8 1-3 2-6 2-9 0-3-1-5-2-7-1-1-2-2-4-2z" fill="#227a43"/>
+                  <circle cx="20" cy="16" r="4" fill="#f0faf3"/>
+                </svg>
+                <span className="text-base font-bold tracking-tight text-slate-900 leading-tight">
+                  New Uptown October
                 </span>
               </div>
               <p className="text-sm text-slate-500 max-w-xs">
-                UAE-based real estate tokenization platform. Fractional ownership made simple, transparent, and regulated.
+                Egyptian real estate tokenization platform for UAE investors. Fractional ownership made simple, transparent, and regulated.
               </p>
             </div>
 
@@ -644,7 +647,7 @@ export default function Landing() {
 
           <div className="mt-10 pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-xs text-slate-400">
-              &copy; {new Date().getFullYear()} DAREK. All rights reserved.
+              &copy; {new Date().getFullYear()} New Uptown October. All rights reserved.
             </p>
             <div className="flex items-center gap-1.5 text-xs text-slate-400">
               <Shield className="w-3.5 h-3.5 text-primary-500" />
