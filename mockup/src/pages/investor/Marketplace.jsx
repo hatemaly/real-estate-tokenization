@@ -72,7 +72,7 @@ export default function Marketplace() {
       />
 
       {/* Stats */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mb-8">
         <StatCard icon={ListFilter} label="Active Listings" value={activeListings.length} />
         <StatCard
           icon={BarChart3}
@@ -84,7 +84,7 @@ export default function Marketplace() {
       </div>
 
       {/* Tabs */}
-      <div className="flex gap-1 bg-slate-100 rounded-lg p-1 w-fit mb-6">
+      <div className="flex gap-1 bg-slate-100 rounded-lg p-1 w-fit mb-6 flex-wrap">
         {tabs.map((tab) => (
           <button
             key={tab.key}
@@ -102,7 +102,7 @@ export default function Marketplace() {
 
       {/* Buy Tokens Section */}
       {activeTab === 'buy' && (
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 mb-10">
           {activeListings.map((listing) => {
             const prop = properties.find((p) => p.id === listing.propertyId);
             const seller = investors.find((i) => i.id === listing.sellerId);

@@ -96,11 +96,11 @@ const columns = [
 
 // Sample pre-filled form data
 const sampleProperty = {
-  name: 'Al Barsha Business Park',
-  location: 'Al Barsha South, Dubai',
+  name: 'October Plaza Business Park',
+  location: '6th of October City, Giza',
   type: 'commercial',
   description:
-    'Modern Grade-B+ office complex in Al Barsha South featuring 12 floors of premium office suites with dedicated parking, 24/7 security, and direct metro access.',
+    'Modern Grade-B+ office complex in 6th of October City featuring 12 floors of premium office suites with dedicated parking, 24/7 security, and direct highway access.',
   bedrooms: 0,
   area: '45,000',
   totalTokens: '15,000',
@@ -109,7 +109,7 @@ const sampleProperty = {
   monthlyRent: '75,000',
   bankAccount: '0098-7654-3210',
   iban: 'AE42 0331 0098 7654 3210 01',
-  tenantName: 'Dubai Smart Solutions LLC',
+  tenantName: 'Vodafone Egypt',
   leaseStart: '2025-04-01',
   leaseEnd: '2030-03-31',
 };
@@ -212,7 +212,7 @@ export default function PropertyManagement() {
           {/* Token Configuration */}
           <section>
             <SectionTitle icon={Coins} title="Token Configuration" />
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               <FormField label="Total Tokens" value={sampleProperty.totalTokens} />
               <FormField label="Price per Token (AED)" value={sampleProperty.pricePerToken} />
               <FormField label="Total Value (AED)" value={sampleProperty.totalValue} />
@@ -224,7 +224,7 @@ export default function PropertyManagement() {
           {/* Financial Setup */}
           <section>
             <SectionTitle icon={Banknote} title="Financial Setup" />
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               <FormField label="Monthly Rent (AED)" value={sampleProperty.monthlyRent} />
               <FormField label="Zand Bank Account No." value={sampleProperty.bankAccount} />
               <FormField label="IBAN" value={sampleProperty.iban} />
@@ -236,7 +236,7 @@ export default function PropertyManagement() {
           {/* Tenant Information */}
           <section>
             <SectionTitle icon={UserCheck} title="Tenant Information" />
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               <FormField label="Tenant Name" value={sampleProperty.tenantName} />
               <FormField label="Lease Start" value={sampleProperty.leaseStart} type="date" />
               <FormField label="Lease End" value={sampleProperty.leaseEnd} type="date" />
@@ -248,7 +248,7 @@ export default function PropertyManagement() {
           {/* Documents */}
           <section>
             <SectionTitle icon={FileText} title="Documents" />
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               <UploadArea label="Title Deed" />
               <UploadArea label="Valuation Report" />
               <UploadArea label="Tenancy Contract" />

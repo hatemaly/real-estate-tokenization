@@ -82,7 +82,7 @@ export default function Dashboard() {
     <div>
       <PageHeader
         title="Platform Overview"
-        subtitle="Real-time metrics and activity across the DAREK platform"
+        subtitle="Real-time metrics and activity across the Uptown October platform"
       />
 
       {/* ── Stat Cards ── */}
@@ -137,7 +137,7 @@ export default function Dashboard() {
               const Icon = typeIcons[tx.type] || AlertCircle;
               const color = typeColors[tx.type] || 'bg-slate-50 text-slate-600';
               return (
-                <div key={tx.id} className="flex items-center gap-4 px-6 py-3.5 hover:bg-slate-50/50 transition-colors">
+                <div key={tx.id} className="flex items-center gap-3 sm:gap-4 px-4 sm:px-6 py-3.5 hover:bg-slate-50/50 transition-colors">
                   <div className={`p-2 rounded-lg shrink-0 ${color}`}>
                     <Icon className="w-4 h-4" />
                   </div>

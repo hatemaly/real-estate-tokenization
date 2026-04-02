@@ -151,7 +151,7 @@ export default function Dashboard() {
             const prop = properties.find((p) => p.id === txn.propertyId);
             const isPurchase = txn.type === 'purchase' || txn.type === 'secondary-trade';
             return (
-              <div key={txn.id} className="flex items-center gap-4 px-6 py-4">
+              <div key={txn.id} className="flex items-center gap-3 sm:gap-4 px-4 sm:px-6 py-4">
                 <div
                   className={`p-2 rounded-lg ${
                     isPurchase ? 'bg-primary-50' : 'bg-emerald-50'

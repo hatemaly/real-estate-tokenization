@@ -134,7 +134,7 @@ export default function PropertyDetail() {
           {/* Property Details */}
           <div className="bg-white rounded-xl shadow-sm border border-slate-100 p-6">
             <h2 className="text-lg font-semibold text-slate-900 mb-4">Property Details</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6">
               {bedrooms > 0 && (
                 <div className="flex items-start gap-3">
                   <div className="p-2 bg-primary-50 rounded-lg">
@@ -195,7 +195,7 @@ export default function PropertyDetail() {
         {/* RIGHT - 1/3 */}
         <div className="space-y-6">
           {/* Investment Card */}
-          <div className="bg-white rounded-xl shadow-sm border border-slate-100 p-6 sticky top-6">
+          <div className="bg-white rounded-xl shadow-sm border border-slate-100 p-6 lg:sticky lg:top-6">
             <h2 className="text-lg font-semibold text-slate-900 mb-5">Invest in This Property</h2>
 
             <div className="space-y-4 mb-6">

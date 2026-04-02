@@ -39,7 +39,7 @@ export default function RentManagement() {
       />
 
       {/* ── Tabs ── */}
-      <div className="flex gap-1 bg-slate-100 rounded-lg p-1 w-fit mb-6">
+      <div className="flex gap-1 bg-slate-100 rounded-lg p-1 w-fit mb-6 flex-wrap">
         {tabs.map((tab) => (
           <button
             key={tab.key}
