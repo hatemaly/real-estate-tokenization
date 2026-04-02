@@ -1,4 +1,4 @@
-// Mock Data for Uptown Green — Egyptian Real Estate Tokenization Platform
+// Mock Data for Uptown October — Egyptian Real Estate Tokenization Platform
 // All amounts in AED - United Arab Emirates Dirham (sold to UAE-based investors)
 
 // ---------------------------------------------------------------------------

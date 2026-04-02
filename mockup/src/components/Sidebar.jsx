@@ -35,7 +35,7 @@ export default function Sidebar({ role = 'investor' }) {
       {/* Brand */}
       <div className="px-6 py-6 border-b border-slate-700/50">
         <Link to={role === 'admin' ? '/admin' : '/investor'} className="block">
-          <h1 className="text-lg font-bold tracking-wide text-white leading-tight">Uptown<br/>Green</h1>
+          <h1 className="text-lg font-bold tracking-wide text-white leading-tight">Uptown<br/>October</h1>
           <p className="text-[11px] font-medium tracking-wider text-slate-400 uppercase mt-0.5">
             Real Estate Tokenization
           </p>
